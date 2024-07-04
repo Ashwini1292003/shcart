@@ -7,7 +7,7 @@ const mongoose=require('mongoose')
 const productRoutes=require('./api/routes/products')
 const orderRoutes=require('./api/routes/orders')
 const userRoutes=require("./api/routes/user")
-mongoose.connect('mongodb://vasanthrajark:'+process.env.MONGO_ATLAS_PW+'@ac-rln0kig-shard-00-00.thvry6q.mongodb.net:27017,ac-rln0kig-shard-00-01.thvry6q.mongodb.net:27017,ac-rln0kig-shard-00-02.thvry6q.mongodb.net:27017/?ssl=true&replicaSet=atlas-ym9lka-shard-0&authSource=admin&retryWrites=true&w=majority&appName=Cluster0').then(()=>{
+mongoose.connect(`mongodb://ashwini1292003:${process.env.MONGO_ATLAS_PW}@ac-aohrcuf-shard-00-00.khucxsz.mongodb.net:27017,ac-aohrcuf-shard-00-01.khucxsz.mongodb.net:27017,ac-aohrcuf-shard-00-02.khucxsz.mongodb.net:27017/?ssl=true&replicaSet=atlas-13x87l-shard-0&authSource=admin&retryWrites=true&w=majority&appName=Cluster0`).then(()=>{
     console.log("connection made")
 }).catch(error => console.error(error));;
 
